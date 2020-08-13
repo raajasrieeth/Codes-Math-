@@ -1,7 +1,7 @@
 from matplotlib import pyplot as plt 
 from matplotlib import style
 import numpy as np
-from functools import lru_cache
+
 plt.style.use("fivethirtyeight")
 class Quadratics():
 	def __init__(self,*args):
@@ -38,6 +38,6 @@ eq1  = Quadratics(a ,b ,c)
 print(eq1.print_eq())
 print(eq1.roots())
 print('The graph is as follows:')
-print("Not so soon!")
+print("Coming soon")
 eq1.grapher()
 

@@ -34,15 +34,15 @@ class Pythagoras():
 			elif "cosec" in ratio:return sine_theta**-1
 			elif "sec" in ratio:return cos_theta**-1
 			else:  return "What are you entering??"
-		except NameError:
+		except TypeError:
 			return "Please enter as a string"
 	def make_triplets(self):
 		a = float(input("Enter one number"))
 		b = float(input("Enter another number"))
 		return "{} , {} and {} form a Pythagorean triplet.".format(a , b , math.sqrt(a**2 + b**2))
 tri = Pythagoras(3,4)	
-# print(tri.trig_ratios("sec"))
-# print(tri.make_triplets())
+print(tri.trig_ratios("sec"))
+print(tri.make_triplets())
 
 
 		
